@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -197,6 +199,7 @@
   .download h2{font-size:clamp(30px,4vw,46px);font-weight:800;margin-bottom:16px;position:relative}
   .download p{color:var(--muted);font-size:18px;max-width:520px;margin:0 auto 32px;position:relative}
   .download .btn{position:relative;font-size:17px;padding:16px 34px}
+  .download-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
   .dl-meta{margin-top:22px;display:flex;gap:24px;justify-content:center;flex-wrap:wrap;color:var(--muted);font-size:13.5px;position:relative}
   .dl-meta span{display:flex;align-items:center;gap:7px}
   /* aviso do SmartScreen — honesto e discreto */
@@ -278,6 +281,7 @@
     <p class="lead">Vendas, estoque, fiado e caixa num sistema só. Abre rápido, funciona sem internet e sincroniza entre o computador e o celular. Feito pra quem vive atrás do balcão.</p>
     <div class="hero-cta">
       <a href="#baixar" class="btn btn-primary">⬇ Baixar para Windows</a>
+      <a href="#baixar" class="btn btn-ghost">🤖 Baixar para Android</a>
       <a href="#como" class="btn btn-ghost">Ver como funciona</a>
     </div>
     <div class="hero-note">✓ <b>Grátis por 15 dias.</b> Baixou, abriu, já vende.</div>
@@ -332,7 +336,7 @@
       <div class="step reveal">
         <div class="num">01</div>
         <h3>Baixe</h3>
-        <p>Um clique pra baixar o SMART PDV no seu computador Windows. Sem cadastro pra baixar.</p>
+        <p>Um clique pra baixar o SMART PDV no seu computador Windows ou celular Android. Sem cadastro pra baixar.</p>
         <span class="ghost-n">1</span>
       </div>
       <div class="step reveal">
@@ -350,7 +354,6 @@
     </div>
   </div>
 </section>
-
 
 <!-- MOCKUP DO PROGRAMA -->
 <section id="veja" class="showcase">
@@ -426,7 +429,7 @@
       <div class="feat reveal"><div class="ic">📄</div><h3>Nota fiscal (NFC-e) <span class="soon">em breve</span></h3><p>Emissão de cupom fiscal integrada, pra deixar sua loja em dia com o fisco.</p></div>
       <div class="feat reveal"><div class="ic">📶</div><h3>Funciona offline</h3><p>Sem internet, a venda não para. Quando a conexão volta, tudo sobe pra nuvem sozinho.</p></div>
       <div class="feat reveal"><div class="ic">🔄</div><h3>PC + celular</h3><p>Use no computador da loja e no celular ao mesmo tempo. Os dados ficam sincronizados.</p></div>
-      <div class="feat reveal"><div class="ic">🖨️</div><h3>Cupom impresso</h3><p>Imprime o comprovante direto na impressora térmica de bobina do seu balcão.</p></div>
+      <div class="feat reveal"><div class="ic">🖨️</div><h3>Impressão sem fio</h3><p>Imprime o cupom na sua impressora térmica USB, Bluetooth ou Wi-Fi — sem cabo bagunçando o balcão.</p></div>
     </div>
   </div>
 </section>
@@ -437,14 +440,21 @@
     <div class="download reveal">
       <h2>Baixe agora e venda hoje</h2>
       <p>O SMART PDV é grátis por 15 dias, com tudo desbloqueado. Baixou, abriu, já está vendendo.</p>
-      <a href="#" class="btn btn-primary" id="btnDownload">⬇ Baixar SMART PDV para Windows</a>
+      <div class="download-btns">
+        <a href="#" class="btn btn-primary" id="btnDownload">⬇ Baixar para Windows</a>
+        <a href="#" class="btn btn-ghost" id="btnDownloadApk">🤖 Baixar para Android (APK)</a>
+      </div>
       <div class="dl-meta">
         <span>🪟 Windows 10 e 11</span>
+        <span>🤖 Android 8 ou superior</span>
         <span>📦 Instalação automática</span>
         <span>🔒 Seus dados na nuvem</span>
       </div>
       <div class="dl-hint">
         💡 <b>Ao abrir, o Windows pode mostrar um aviso azul</b> ("Windows protegeu o computador"). É normal com programas novos. Clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b> pra instalar.
+      </div>
+      <div class="dl-hint">
+        📱 <b>No Android, o sistema pode avisar que é de "fonte desconhecida".</b> Isso acontece porque o app não vem da Play Store — é só confirmar a instalação normalmente.
       </div>
     </div>
   </div>
@@ -463,7 +473,7 @@
       <details class="reveal"><summary>Uso no computador e no celular ao mesmo tempo? <span class="plus">+</span></summary><p>Sim. Faça login nos dois e tudo fica sincronizado — produtos, vendas, clientes e estoque acompanham em todos os aparelhos.</p></details>
       <details class="reveal"><summary>Aquele aviso azul do Windows ao abrir é vírus? <span class="plus">+</span></summary><p>Não. Esse aviso ("Windows protegeu o computador") aparece em qualquer programa novo que ainda não é super conhecido pelo Windows. É só clicar em "Mais informações" e "Executar assim mesmo". Seu antivírus pode escanear à vontade.</p></details>
       <details class="reveal"><summary>Meus dados ficam seguros? <span class="plus">+</span></summary><p>Seus dados ficam guardados na nuvem e vinculados à sua conta. Se você trocar de computador ou reinstalar, é só entrar com seu login que tudo volta.</p></details>
-      <details class="reveal"><summary>Precisa de impressora especial? <span class="plus">+</span></summary><p>Não é obrigatório. Mas, se você tiver uma impressora térmica de bobina, o SMART PDV imprime o cupom direto nela.</p></details>
+      <details class="reveal"><summary>Que tipo de impressora funciona? <span class="plus">+</span></summary><p>Não é obrigatório ter impressora. Mas se você tiver uma impressora térmica de bobina, o SMART PDV imprime o cupom nela — por cabo USB, pareada por Bluetooth ou pela mesma rede Wi-Fi (você informa o IP dela uma vez em Config → Impressora).</p></details>
       <details class="reveal"><summary>Como funciona a nota fiscal? <span class="plus">+</span></summary><p>A emissão de NFC-e está chegando. Fale com a gente no WhatsApp pra saber como ativar a parte fiscal na sua loja.</p></details>
     </div>
   </div>
@@ -514,10 +524,19 @@
   },{threshold:.12});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
-  // Link de download — troque pela URL do seu release no GitHub
-  var URL_DOWNLOAD = "https://github.com/gynbetfc/smartpdv-download/releases/download/v11.0.0/SMART_SET.exe";
-  var b = document.getElementById('btnDownload');
-  if(b){ b.setAttribute('href', URL_DOWNLOAD); }
+  // Link de download do Windows — troque pela URL do seu release no GitHub
+  // (a versão atual do instalador está em C:\Users\Eduardo\Desktop\SMART_PDV_Producao)
+  var URL_DOWNLOAD_WINDOWS = "https://github.com/gynbetfc/smartpdv/releases/download/smtpdv/SMART_PDV_Setup.exe";
+  // Link de download do APK — troque quando o APK do Android estiver publicado
+  var URL_DOWNLOAD_APK = "https://github.com/gynbetfc/smartpdv/releases/download/smtpdv/SMART_PDV.apk";
+
+  var bw = document.getElementById('btnDownload');
+  if(bw){ bw.setAttribute('href', URL_DOWNLOAD_WINDOWS); }
+  var ba = document.getElementById('btnDownloadApk');
+  if(ba){ ba.setAttribute('href', URL_DOWNLOAD_APK); }
+  document.querySelectorAll('.hero-cta a[href="#baixar"]').forEach(function(a){
+    if(a.textContent.includes('Windows')) a.addEventListener('click', function(){ if(URL_DOWNLOAD_WINDOWS.indexOf('#')!==0){} });
+  });
 </script>
 </body>
 </html>
